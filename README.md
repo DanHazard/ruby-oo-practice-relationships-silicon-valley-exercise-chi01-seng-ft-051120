@@ -21,6 +21,32 @@ We've provided you with a console that you can use to test your code. To enter a
 
 **Remember!** This is a code challenge without tests. You cannot run `rspec` you cannot run `learn`. You'll need to create your own sample instances for testing purposes. Make sure your associations and methods work in the console before submitting.
 
+## Domain Model ##
+
+* What are my models?
+  - Startup
+  - VentureCapitalist
+  - FundingRound
+* What does my schema look like?
+  - Startup
+    - name (Str)
+    - founder (Str)
+    - domain (Str)
+
+  - VentureCapitalist
+    - name (Str)
+    - total_worth (Str)
+
+  - FundingRound
+    - startup (instance)
+    - venture_capitalist (instance)
+    - type (Str)
+    - investment (Int)
+
+* What are the relationships between my models?
+
+Startup ------<VentureCapitalist>------- FundingRound
+
 ## Deliverables
 
 ### Basic Class Methods and Properties
